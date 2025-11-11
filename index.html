@@ -36,6 +36,7 @@
       color: var(--fg);
       font-family: var(--font);
       line-height: 1.6;
+      font-size: 0.92rem; /* slightly smaller base font */
     }
 
     main {
@@ -51,7 +52,7 @@
     }
 
     .logo {
-      margin-bottom: 1.8rem; /* more space below logo */
+      margin-bottom: 1.8rem;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -62,29 +63,30 @@
       max-width: 100%;
       height: auto;
       width: 260px;
-      transform: scale(1.6);    /* final scale */
+      transform: scale(1.6);
       transform-origin: center;
     }
 
     .tagline {
-      font-size: 1rem;
+      font-size: 0.9rem;
       letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--accent2);
-      margin-bottom: 1.5rem; /* more space before 'Australia' */
+      margin-bottom: 1.4rem;
     }
 
     .location {
-      font-size: 1rem;
+      font-size: 0.9rem;
       color: var(--accent3);
-      margin-bottom: 1.2rem; /* tighter spacing above footer */
+      margin-bottom: 1rem;
     }
 
     footer {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       color: var(--muted);
       letter-spacing: 0.05em;
-      margin-top: 0; /* eliminate extra bottom gap */
+      margin-top: 0;
+      margin-bottom: 0.3rem; /* slightly reduced bottom padding */
     }
   </style>
 </head>
