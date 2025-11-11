@@ -34,11 +34,14 @@
       background: rgba(8, 9, 12, 0.9);
       backdrop-filter: blur(12px);
     }
-    h1 {
-      margin: 0 0 0.4rem;
-      font-size: clamp(2.1rem, 4vw, 2.6rem);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    .logo {
+      margin: 0 0 0.8rem;
+    }
+    .logo img {
+      width: clamp(160px, 40vw, 420px);
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
     .tagline {
       font-size: 0.95rem;
@@ -60,9 +63,13 @@
 </head>
 <body>
 <main>
-  <h1>Sela’s Creations</h1>
-  <div class="tagline">Screenwriting &nbsp; | &nbsp; Coding</div>
+  <div class="logo">
+    <img src="assets/scbutterflyc13effff-10mm-angle-full-logo-2.svg"
+         alt="Sela’s Creations logo"
+         onerror="this.onerror=null;this.src='assets/scbutterflyc13effff-10mm-angle-full-logo-2.png';">
+  </div>
 
+  <div class="tagline">Screenwriting &nbsp; | &nbsp; Coding</div>
   <div class="location">Australia</div>
   <footer>© 2025 Sela’s Creations. All rights reserved.</footer>
 </main>
