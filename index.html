@@ -52,14 +52,19 @@
     .logo {
       margin: 0 0 0.8rem;
       width: 100%;
+      display: flex;
+      justify-content: center;
     }
 
     .logo img {
       display: block;
-      margin: 0 auto;
-      /* scales from the center of the card */
-      width: clamp(260px, 50%, 520px);
+      max-width: 100%;
       height: auto;
+
+      /* base size & centered scale */
+      width: 260px;              /* logical base width inside the card */
+      transform: scale(1.35);    /* make it bigger */
+      transform-origin: center;  /* grow equally left + right from center */
     }
 
     .tagline {
