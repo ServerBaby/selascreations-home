@@ -16,9 +16,12 @@
       --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html, body {
+    html,
+    body {
       margin: 0;
       padding: 0;
       height: 100%;
@@ -46,26 +49,17 @@
       margin: 0;
     }
 
-    /* --- LOGO FIX --- */
     .logo {
-      position: relative;
       margin: 0 0 0.8rem;
       width: 100%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .logo img {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 250%;          /* enlarge relative to box */
-      max-width: 650px;     /* upper cap for big screens */
-      min-width: 220px;     /* small-screen safeguard */
-      height: auto;
       display: block;
+      margin: 0 auto;
+      /* scales from the center of the card */
+      width: clamp(260px, 115%, 520px);
+      height: auto;
     }
 
     .tagline {
